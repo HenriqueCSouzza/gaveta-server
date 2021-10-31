@@ -1,10 +1,10 @@
 import 'reflect-metadata';
 import 'dotenv/config';
-import { ApolloServer } from "apollo-server";
-import { buildSchema } from "type-graphql";
+import { ApolloServer } from 'apollo-server';
+import { buildSchema } from 'type-graphql';
 // import express from 'express';
 import './database';
-import {resolvers}  from "./schemas/resolvers/index"
+import { resolvers } from './schemas/resolvers/index';
 // import routes from './routes';
 import errorHandler from './middlewares/errorHandler';
 
@@ -28,5 +28,3 @@ async function main() {
 }
 
 main();
-
-

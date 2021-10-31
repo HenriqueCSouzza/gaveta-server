@@ -1,12 +1,16 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5432,
+  "port": 5435,
   "username": "postgres",
-  "password": "root",
-  "database": "postgres",
-  "entities": ["./src/models/*.ts"],
-  "migrations": ["./src/database/migrations/*.ts"],
+  "password": "docker",
+  "database": "gaveta",
+  "entities": [
+    "./src/models/*.ts"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }

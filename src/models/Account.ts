@@ -1,5 +1,5 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from "typeorm";
-import { ObjectType, Field, ID } from "type-graphql";
+import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { ObjectType, Field, ID } from 'type-graphql';
 
 @Entity('accounts')
 @ObjectType()
@@ -19,9 +19,4 @@ export class Account extends BaseEntity {
   @Field(() => String)
   @Column()
   password: string;
-
-
 }
-
-
-

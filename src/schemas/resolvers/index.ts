@@ -1,6 +1,4 @@
-import { NonEmptyArray } from "type-graphql";
-import { AccountResolver } from "./AccountResolver";
+import { NonEmptyArray } from 'type-graphql';
+import { AccountResolver } from './AccountResolver';
 
-export const resolvers = [
-  AccountResolver,
-] as NonEmptyArray<Function>;
+export const resolvers = [AccountResolver] as NonEmptyArray<Function>;
