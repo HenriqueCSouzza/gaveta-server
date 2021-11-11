@@ -5,16 +5,16 @@ import { ObjectType, Field, ID } from 'type-graphql';
 @ObjectType()
 export class Account extends BaseEntity {
   @Field(() => ID)
-  @PrimaryGeneratedColumn()
-  id: string;
-
-  @Field(() => String)
-  @Column()
-  name: string;
+  @PrimaryGeneratedColumn('uuid')
+  uuid: string;
 
   @Field(() => String)
   @Column()
   email: string;
+
+  @Field(() => String)
+  @Column()
+  provider: string;
 
   @Field(() => String)
   @Column()

@@ -1710,6 +1710,11 @@ graphql@^15.3.0:
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.6.0.tgz#e69323c6a9780a1a4b9ddf7e35ca8904bb04df02"
   integrity sha512-WJR872Zlc9hckiEPhXgyUftXH48jp2EjO5tgBBOyNMRJZ9fviL2mJBD6CAysk6N5S0r9BTs09Qk39nnJBkvOXQ==
 
+graphql@^15.5.0:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.7.2.tgz#85ab0eeb83722977151b3feb4d631b5f2ab287ef"
+  integrity sha512-AnnKk7hFQFmU/2I9YSQf3xw44ctnSFCfp3zE0N6W174gqe9fWG/2rKaKxROK7CcI3XtERpjEKFqts8o319Kf7A==
+
 has-ansi@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
@@ -3360,6 +3365,15 @@ type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
+
+type-graphql-filter@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/type-graphql-filter/-/type-graphql-filter-0.4.0.tgz#37a0de99e1e8296e74608d393070eb038e350a1f"
+  integrity sha512-QX2FqSNx3w9zbBP2LO1sSnpY/0umZJaGCNh9tNIF3IIbg17uqJLYlHwoG4LIYqWWbexBpbHD4f5odAAdZIA8Dg==
+  dependencies:
+    class-validator "^0.13.1"
+    graphql "^15.5.0"
+    type-graphql "^1.1.1"
 
 type-graphql@^1.1.1:
   version "1.1.1"
