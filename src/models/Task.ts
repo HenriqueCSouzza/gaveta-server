@@ -1,6 +1,14 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import {
+  Entity,
+  BaseEntity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
 import { ObjectType, Field, ID } from 'type-graphql';
 import { Filter } from 'type-graphql-filter';
+// import Project from './Project';
 
 @Entity('tasks')
 @ObjectType()
@@ -24,4 +32,8 @@ export class Task extends BaseEntity {
   @Filter(['eq', 'ne', 'like', 'likeAny', 'in'])
   @Column()
   status: boolean;
+
+  // @ManyToOne(() => Project)
+  // @JoinColumn({ name: 'project_id' })
+  // project: Project;
 }

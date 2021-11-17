@@ -1,7 +1,7 @@
 {
   "type": "postgres",
-  "host": "localhost",
-  "port": 5435,
+  "host": "192.168.65.0",
+  "port": 5432,
   "username": "postgres",
   "password": "docker",
   "database": "gaveta",

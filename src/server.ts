@@ -6,7 +6,7 @@ import { buildSchema } from 'type-graphql';
 import './database';
 import { resolvers } from './schemas/resolvers/index';
 // import routes from './routes';
-import errorHandler from './middlewares/errorHandler';
+// import errorHandler from './middlewares/errorHandler';
 
 async function main() {
   // const app = express();
